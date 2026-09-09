@@ -1,0 +1,952 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Desart</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+
+  <!-- Bootstrap 5.3.8 CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Bootstrap Icons CDN -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+
+</head>
+
+<body>
+
+
+
+
+  <!-- Boostrap nav bar -->
+
+  <div class="header">
+    <div class="container">
+      <nav class="navbar navbar-expand-lg navbar-light main-head">
+
+        <a class="navbar-brand fw-bold" href="index.html"><img src="images/logo-1.png" alt="he-logo"></a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav ">
+            <li class="nav-item">
+              <a class="nav-link active" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-success" href="about.html">About</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#">Services</a>
+              <ul class="dropdown-menu">
+                <li class="dd-items"><a class="dropdown-item" href="services.html">Services</a></li>
+                <li class="dd-items"><a class="dropdown-item" href="servicesdetail.html">services details</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#">Portfolio</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="portfolio.html">Portfolio</a></li>
+                <li><a class="dropdown-item" href="portfoliodetail.html">Portfolio details</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#">Blog</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="blog.html">blog single</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+        <!-- 🔍 Search (only on large screens) -->
+        <div class="d-none d-lg-flex align-items-center ms-3">
+          <input type="text" class="form-control form-control-sm search-box" id="searchBox" placeholder="Search...">
+          <button class="search-btn" id="searchToggle">
+            <i class="bi bi-search"></i>
+          </button>
+        </div>
+      </nav>
+    </div>
+  </div>
+
+
+
+
+  <!-- Boostrap nav end -->
+
+
+
+
+
+
+
+
+
+  <!-- Hero Slider -->
+
+
+
+
+  <section class="main_section">
+    <div id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="5000"
+      data-bs-touch="true" data-bs-keyboard="true">
+
+      <div class="carousel-inner">
+        <!-- Slide 1 -->
+        <div class="carousel-item active">
+          <div class="container-fluid hero-slider">
+            <div class="container">
+              <div class="row align-items-center">
+                <div class="col-lg-6 slide-content">
+                  <h1 class="slide-title">Creative Web Design Studio</h1>
+                  <p class="slide-text">
+                    We create new technologies for your business thanks to our wonderful team of professionals.
+                    Together we can reach new heights.
+                  </p>
+                  <a href="#" class="btn btn-learn">Learn more</a>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <img id="myImage" src="images/pic1.png" alt="Example Image">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="carousel-item">
+          <div class="container-fluid hero-slider">
+            <div class="container">
+              <div class="row align-items-center">
+                <div class="col-lg-6 slide-content">
+                  <h1 class="slide-title">Creative Web Design Studio</h1>
+                  <p class="slide-text">
+                    We create new technologies for your business thanks to our wonderful team of professionals.
+                    Together we can reach new heights.
+                  </p>
+                  <a href="#" class="btn btn-learn">Learn more</a>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <img id="myImage" src="images/pic2.png" alt="Example Image">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 3 -->
+        <div class="carousel-item">
+          <div class="container-fluid hero-slider">
+            <div class="container">
+              <div class="row align-items-center">
+                <div class="col-lg-6 slide-content">
+                  <h1 class="slide-title">Creative Web Design Studio</h1>
+                  <p class="slide-text">
+                    We create new technologies for your business thanks to our wonderful team of professionals.
+                    Together we can reach new heights.
+                  </p>
+                  <a href="#" class="btn btn-learn">Learn more</a>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <img id="myImage" src="images/pic3.png" alt="Example Image">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Arrows -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon color-py"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </button>
+      </div>
+  </section>
+
+
+
+
+
+
+  <!-- section start -->
+
+
+
+
+
+  <div class="mainsection">
+    <div class="container">
+      <div class="row justify-content-between">
+        <div class="col">
+          <img class="i1" src="images/s2.png" alt="s2">
+          <img class="i2" src="images/s21.png" alt="s2">
+        </div>
+        <div class="col">
+          <p class="aa">About</p>
+          <h2 class="ab">We are the Creative <br>Digital Team</h2>
+          <p class="ac">Our digital company has been developing <br> products for 15 years.</p>
+          <p class="ad">We’ve got a lot of awards for our work and develop <br> applications that became popular in the
+            world.
+            We try not <br>to miss important details in each area.</p>
+          <button class="video-btn align-items-center">
+            <a href="#"><i class="bi bi-play-fill"></i> Watch video</a>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <!-- section end -->
+
+
+
+
+  <!-- Counter -->
+
+  <section class="stats-section">
+    <div class="container">
+      <div class="row text-center">
+
+        <div class="col-12 col-md-3">
+          <h2 class="counter" data-count="125">0</h2><span class="plus">+</span>
+          <p>Happy Clients</p>
+        </div>
+
+        <div class="col-12 col-md-3">
+          <h2 class="counter" data-count="250">0</h2><span class="plus">+</span>
+          <p>Successful Projects</p>
+        </div>
+
+        <div class="col-12 col-md-3">
+          <h2 class="counter" data-count="40">0</h2><span class="plus">+</span>
+          <p>Team Members</p>
+        </div>
+
+        <div class="col-12 col-md-3">
+          <h2 class="counter" data-count="20">0</h2><span class="plus">+</span>
+          <p>Awards Winning</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Counter End -->
+
+
+  <!-- section start-->
+  <div class="mainsection3">
+    <div class="container">
+      <div class="row">
+        <div class="sstion">
+          <p class="s3">Come on! we don’t bite :)</p>
+          <h2 class="s31">Get a Free Consultation</h2>
+          <a href="#" class="btn btn-primary rounded-0">Get Started</a>
+        </div>
+      </div>
+    </div>
+    <div class="sstion2">
+      <div class="iimg">
+        <img src="images/pic2.png" alt="pic2">
+      </div>
+    </div>
+  </div>
+  <!-- section end -->
+
+
+
+
+
+
+
+  <!-- section start -->
+
+
+
+
+  <div class="mainsectuion4">
+    <div class="container">
+      <p class="s41 text-center">Services that we provide</p>
+      <h2 class="s42 text-center">We Develop Digital Products</h2>
+      <div class="row">
+        <div class="col">
+          <img src="images/s41.svg" alt="s41">
+          <h3 class="title-h3">UI/UX Design</h3>
+          <p class="descrpition">Everything starts with the beautiful. And professional design is of great importance in
+            this matter.</p>
+          <a class="btn-text btn-text-img" href="#">Read More</a>
+        </div>
+        <div class="col col-center">
+          <img src="images/s42.svg" alt="s41">
+          <h3 class="title-h3">Web Development</h3>
+          <p class="descrpition">Our developers are carefully considering how your product should work while maintaining
+            its flexibility.</p>
+          <a class="btn-text btn-text-img" href="#">Read More</a>
+        </div>
+        <div class="col">
+          <img src="images/s43.svg" alt="s41">
+          <h3 class="title-h3">SEO Optimization</h3>
+          <p class="descrpition">Promotion of your product is an important step in making money and constant popularity
+            among consumers.</p>
+          <a class="btn-text btn-text-img" href="#">Read More</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+  <!-- section end -->
+
+
+
+
+
+
+
+
+  <!-- section start -->
+
+
+  <section class="mainsectin5">
+    <div class="container">
+      <div class="row justify-content-end">
+        <div class="col-md-12 col-xl-4">
+          <p class="before-title">recent projects</p>
+          <h2 class="title-h2">Check Our <br> Latest Cases</h2>
+          <p class="descrpition">We always try to implement our creative ideas at the highest level. You can see it by
+            looking at our portfolio.</p>
+          <a href="#" class="btn btn-primary rounded-0">View all</a>
+        </div>
+      </div>
+    </div>
+    <div class="box-case">
+      <div class="row row-cols-3">
+        <div class="col col-case">
+          <div class="case-img1 case-1">
+            <div class="case-text">
+              <p class="box-text">
+                <a href="#">Clean design concept</a>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col col-case">
+          <div class="case-img1 case-2">
+            <div class="case-text">
+              <p class="box-text">
+                <a href="#">Clean design concept</a>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col col-case">
+          <div class="case-img1 case-3">
+            <div class="case-text">
+              <p class="box-text">
+                <a href="#">Clean design concept</a>
+              </p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- section end -->
+
+
+
+
+
+
+
+
+
+
+
+  <!-- srction start -->
+
+  <section class="mainsection6">
+    <div class="container">
+      <div class="row-main6">
+        <p class="s61">Newsletter</p>
+        <h2 class="s62">Want to Be Always Informed?</h2>
+        <div class="newsletter-box">
+          <input type="email" placeholder="Enter your email">
+          <button class="btn1">Subscribe</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="side-image">
+      <img src="images/s61.png" alt="Image">
+    </div>
+  </section>
+
+
+
+  <!-- section end -->
+
+
+
+
+
+
+
+
+
+
+
+  <!-- START -->
+
+
+  <section class="main-section7">
+    <div class="container">
+      <p class="Services text-center">our team</p>
+      <h2 class="Digital-Products text-center">Experts In Their Field</h2>
+      <p class="pera-best text-center">The best professionals will work on your product. <br>We can safely say that
+        success is guaranteed to your business.</p>
+    </div>
+
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+
+    <div class="team-slider">
+
+      <!-- Slide 1 -->
+      <div class="team-card">
+        <img src="images/s71img.png">
+        <div class="overlay">
+          <h3>Aleksander Firson</h3>
+          <div class="social">
+            <a href="#">f</a>
+            <a href="#">in</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 2 -->
+      <div class="team-card">
+        <img src="images/s72img.png">
+        <div class="overlay">
+          <h3>Johnson Mark</h3>
+          <div class="social">
+            <a href="#">f</a>
+            <a href="#">in</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 3 -->
+      <div class="team-card">
+        <img src="images/s73img.png">
+        <div class="overlay">
+          <h3>Robert F.</h3>
+          <div class="social">
+            <a href="#">f</a>
+            <a href="#">in</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 4 -->
+      <div class="team-card">
+        <img src="images/s74img.png">
+        <div class="overlay">
+          <h3>Micheal Deo</h3>
+          <div class="social">
+            <a href="#">f</a>
+            <a href="#">in</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 5 -->
+      <div class="team-card">
+        <img src="images/s75img.png">
+        <div class="overlay">
+          <h3>William Smith</h3>
+          <div class="social">
+            <a href="#">f</a>
+            <a href="#">in</a>
+          </div>
+        </div>
+      </div>
+      <div class="team-card">
+        <img src="images/s71img.png">
+        <div class="overlay">
+          <h3>Aleksander Firson</h3>
+          <div class="social">
+            <a href="#">f</a>
+            <a href="#">in</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 2 -->
+      <div class="team-card">
+        <img src="images/s72img.png">
+        <div class="overlay">
+          <h3>Johnson Mark</h3>
+          <div class="social">
+            <a href="#">f</a>
+            <a href="#">in</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 3 -->
+      <div class="team-card">
+        <img src="images/s73img.png">
+        <div class="overlay">
+          <h3>Robert F.</h3>
+          <div class="social">
+            <a href="#">f</a>
+            <a href="#">in</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 4 -->
+      <div class="team-card">
+        <img src="images/s74img.png">
+        <div class="overlay">
+          <h3>Micheal Deo</h3>
+          <div class="social">
+            <a href="#">f</a>
+            <a href="#">in</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 5 -->
+      <div class="team-card">
+        <img src="images/s75img.png">
+        <div class="overlay">
+          <h3>William Smith</h3>
+          <div class="social">
+            <a href="#">f</a>
+            <a href="#">in</a>
+          </div>
+        </div>
+      </div>
+      <div class="team-card">
+        <img src="images/s71img.png">
+        <div class="overlay">
+          <h3>Aleksander Firson</h3>
+          <div class="social">
+            <a href="#">f</a>
+            <a href="#">in</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 2 -->
+      <div class="team-card">
+        <img src="images/s72img.png">
+        <div class="overlay">
+          <h3>Johnson Mark</h3>
+          <div class="social">
+            <a href="#">f</a>
+            <a href="#">in</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 3 -->
+      <div class="team-card">
+        <img src="images/s73img.png">
+        <div class="overlay">
+          <h3>Robert F.</h3>
+          <div class="social">
+            <a href="#">f</a>
+            <a href="#">in</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 4 -->
+      <div class="team-card">
+        <img src="images/s74img.png">
+        <div class="overlay">
+          <h3>Micheal Deo</h3>
+          <div class="social">
+            <a href="#">f</a>
+            <a href="#">in</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 5 -->
+      <div class="team-card">
+        <img src="images/s75img.png">
+        <div class="overlay">
+          <h3>William Smith</h3>
+          <div class="social">
+            <a href="#">f</a>
+            <a href="#">in</a>
+          </div>
+        </div>
+      </div>
+
+
+      </div>
+
+      <!-- dot fixed -->
+      <div class="custom-dots">
+        <span class="dot active" data-slide="0"></span>
+        <span class="dot" data-slide="1"></span>
+        <span class="dot" data-slide="2"></span>
+      </div>
+
+    
+  </section>
+
+  <!-- end -->
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- start -->
+
+
+
+
+  <section class="main-section8">
+    <div class="container">
+      <p class="s8-title text-center">develop yourself - read more</p>
+      <h2 class="s8-h2">Resent News And Articles</h2>
+      <div class="row s-s8">
+        <div class="col S-s8">
+          <div class="s8-img1 sec-1">
+            <div class="s8-post-date">Oct 12, 2019</div>
+          </div>
+          <h3 class="s8-h3 h3-title">
+            <a href="#">How to create an amazing design <br>for your site without</a>
+          </h3>
+          <P class="S8-decripition">Have you ever thought about your own site with clean and modern design</P>
+          <a class="s8-btn" href="#">Read-more</a>
+        </div>
+        <div class="col S-s8">
+          <div class="s8-img1 sec-2">
+            <div class="s8-post-date">Oct 12, 2019</div>
+          </div>
+          <h3 class="s8-h3 h3-title">
+            <a href="#">How to create an amazing design for your site without</a>
+          </h3>
+          <P class="S8-decripition">Have you ever thought about your own site with clean and modern design</P>
+          <a class="s8-btn" href="#">Read-more</a>
+        </div>
+        <div class="col S-s8">
+          <div class="s8-img1 sec-3">
+            <div class="s8-post-date">Oct 12, 2019</div>
+          </div>
+          <h3 class="s8-h3 h3-title">
+            <a href="#">How to create an amazing design for your site without</a>
+          </h3>
+          <P class="S8-decripition">Have you ever thought about your own site with clean and modern design</P>
+          <a class="s8-btn" href="#">Read-more</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- end -->
+
+
+
+
+
+
+
+  <!-- start -->
+
+
+
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="container">
+        <div class="row justify-content-between align-items-center footer-nav">
+          <div class="col-xl-2 col-md-2 col-sm-12 col-12">
+
+            <!-- LOGO -->
+            <a class="navbar-brand" href="index.html">
+              <img class="flogo" src="images/flogo.png" alt="flogo">
+              </a>
+
+            </div>
+            <div class="col-xl-10 col-md-10 col-sm-12 col-12">
+            <!-- MENU -->
+            <ul class="nav justify-content-end">
+              <li class="nav-item active"><a class="nav-link active" href="#">Home</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">Services</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">Portfolio</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">Blog</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">Contacts</a></li>
+            </ul>
+            </div>
+          
+          </div>
+
+        <div class="footer-columns">
+
+          <!-- ABOUT -->
+          <div class="footer-col">
+            <h3 class="footer-heading">About</h3>
+            <p>
+              We've got a lot of awards for our work and develop applications that became popular
+              in the world. We try not to miss important details in each area.
+            </p>
+
+            <div class="social-icons">
+              <a href="#"><i class="fa-brands fa-facebook"></i></a>
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-pinterest"></i></a>
+              <a href="#"><i class="fab fa-behance"></i></a>
+            </div>
+          </div>
+
+          <!-- SERVICES -->
+          <div class="footer-col">
+            <h3 class="footer-heading">Services</h3>
+            <ul class="footer-links">
+              <li><a href="#">Brand Identity</a></li>
+              <li><a href="#">Marketing Strategy</a></li>
+              <li><a href="#">App Development</a></li>
+              <li><a href="#">eCommerce</a></li>
+              <li><a href="#">Landing Pages</a></li>
+            </ul>
+          </div>
+
+          <!-- CONTACT -->
+          <div class="footer-col">
+            <h3 class="footer-heading">Contact us</h3>
+
+            <div class="contact">
+              <i class="fas fa-map-marker-alt"></i>
+              <p>694-762 Dekalb Ave<br>Brooklyn, NY 11216 USA</p>
+            </div>
+
+            <div class="contact">
+              <i class="fas fa-phone"></i>
+              <p>+1 6548 96 21</p>
+            </div>
+
+            <div class="contact">
+              <i class="fas fa-envelope"></i>
+              <p>info@sitename.com</p>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- FOOTER BOTTOM -->
+        <div class="footer-bottom">
+          <p>© Copyright 2019 George_Fx</p>
+
+          <div class="bottom-links">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms and Conditions</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+
+
+  <!-- end -->
+
+
+
+
+
+
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+  <script>
+    $('.team-slider').slick({
+      slidesToShow: 5,
+      slidesToScroll: 3,
+      autoplay: false,
+      autoplaySpeed: 2500,
+      arrows: false,
+      dots: false,
+      responsive: [
+        { breakpoint: 1200, settings: { slidesToShow: 4 } },
+        { breakpoint: 992, settings: { slidesToShow: 3 } },
+        { breakpoint: 768, settings: { slidesToShow: 2 } },
+        { breakpoint: 480, settings: { slidesToShow: 1 } },
+      ]
+    });
+
+    // Click on custom dots → go to slide
+    $(".custom-dots .dot").on("click", function () {
+      var index = $(this).data("slide");
+
+      $(".team-slider").slick('slickGoTo', index);
+
+      // activate visual dot
+      $(".custom-dots .dot").removeClass("active");
+      $(this).addClass("active");
+    });
+
+    // Update dots when slider moves (optional)
+    $('.team-slider').on('afterChange', function (event, slick, currentSlide) {
+      let dotIndex = currentSlide % 3;
+      $(".custom-dots .dot").removeClass("active");
+      $(".custom-dots .dot").eq(dotIndex).addClass("active");
+    });
+  </script>
+
+
+
+
+
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+  <script>
+    // JavaScript to toggle the search box
+    const searchToggle = document.getElementById('searchToggle');
+    const searchBox = document.getElementById('searchBox');
+
+    searchToggle.addEventListener('click', () => {
+      searchBox.classList.toggle('active');
+      if (searchBox.classList.contains('active')) {
+        searchBox.focus();
+      } else {
+        searchBox.value = ''; // optional: clear when closed
+      }
+    });
+  </script>
+  <script>
+    const img = document.getElementById("myImage");
+    let initialZoom = window.devicePixelRatio || 1; // initial zoom level
+
+    // Detect zoom on window resize
+    window.addEventListener("resize", () => {
+      let currentZoom = window.devicePixelRatio || 1;
+      if (currentZoom !== initialZoom) {
+        img.style.opacity = "0"; // image disappear on zoom
+      } else {
+        img.style.opacity = "1"; // normal
+      }
+    });
+  </script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+  <script>
+    $(document).ready(function () {
+
+      let started = false;
+
+      $(window).scroll(function () {
+        let sectionTop = $('.stats-section').offset().top - window.innerHeight;
+
+        if (!started && $(window).scrollTop() > sectionTop) {
+          $('.counter').each(function () {
+
+            let $this = $(this);
+            let countTo = $this.attr('data-count');
+
+            $this.prop('Counter', 0).animate({
+              Counter: countTo
+            }, {
+              duration: 3000, // Speed control
+              easing: 'swing',
+              step: function (now) {
+                $this.text(Math.ceil(now));
+              }
+            });
+
+          });
+          started = true;
+        }
+      });
+
+    });
+  </script>
+
+
+  <script>
+    let current = 0;
+    const slides = document.querySelectorAll(".slide");
+    const indicators = document.querySelectorAll(".indicators span");
+
+    function updateSlider() {
+      document.querySelector(".main-section7")
+        .style.transform = `translateX(-${current * 100}%)`;
+
+      indicators.forEach(i => i.classList.remove("active"));
+      indicators[current].classList.add("active");
+    }
+
+    function changeSlide(n) {
+      current = n;
+      updateSlider();
+    }
+
+    updateSlider();
+
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>

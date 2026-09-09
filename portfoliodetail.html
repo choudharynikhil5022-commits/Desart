@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Desart</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+
+    <!-- Bootstrap 5.3.8 CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Bootstrap Icons CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+
+
+</head>
+
+<body>
+
+
+
+
+    <!-- Boostrap nav bar -->
+
+    <div class="header">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light main-head">
+
+                <a class="navbar-brand fw-bold" href="index.html"><img src="images/logo-1.png" alt="he-logo"></a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav ">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-success" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#">Services</a>
+                            <ul class="dropdown-menu">
+                                <li class="dd-items"><a class="dropdown-item" href="services.html">Services</a></li>
+                                <li class="dd-items"><a class="dropdown-item" href="servicesdetail.html">services
+                                        details</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#">Portfolio</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="portfolio.html">Portfolio</a></li>
+                                <li><a class="dropdown-item active" href="portfoliodetail.html">Portfolio details</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#">Blog</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="blog.html">blog single</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- 🔍 Search (only on large screens) -->
+                <div class="d-none d-lg-flex align-items-center ms-3">
+                    <input type="text" class="form-control form-control-sm search-box" id="searchBox"
+                        placeholder="Search...">
+                    <button class="search-btn" id="searchToggle">
+                        <i class="bi bi-search"></i>
+                    </button>
+                </div>
+            </nav>
+        </div>
+    </div>
+
+
+
+
+    <!-- Boostrap nav end -->
+
+
+
+    <!-- 1 start -->
+
+    <div class="about-sec1">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h2 class="as1">Modern Minimal Concept for Coolbabka Brand</h2>
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item">
+                                <a href="index.html">Home</a>
+                            </li>
+                            <li class="breadcrumb-item active" aria-current="page">portfolio</li>
+                            <li class="breadcrumb-item active" aria-current="page">Modern Minimal Concept for Coolbabka
+                                Brand</li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <div class="sec1-banner">
+            <div class="sec-thumb">
+                <img class="sec1-img-banner" src="images/as1.jpg" alt="">
+            </div>
+        </div>
+    </div>
+    <!-- end -->
+
+
+
+
+
+
+    <SECtion class="SEC-2POR">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-8 col-md-12">
+                    <div class="gallery-1port">
+                        <!-- MAIN IMAGE SLIDER (ONLY THIS SCROLLS) -->
+                        <div class="main-slider-port">
+                            <div><img src="images/Portfolio-work02.jpg"></div>
+                            <div><img src="images/pdimg1.jpg"></div>
+                            <div><img src="images/pdimg2.jpg"></div>
+                            <div><img src="images/pdimg3.jpg"></div>
+                        </div>
+
+                        <!-- STATIC THUMBNAILS (NO SLIDER) -->
+                        <div class="thumbs">
+                            <div class="thumb active" data-index="0">
+                                <img src="images/Portfolio-work02.jpg">
+                            </div>
+                            <div class="thumb" data-index="1">
+                                <img src="images/pdimg1.jpg">
+                            </div>
+                            <div class="thumb" data-index="2">
+                                <img src="images/pdimg2.jpg">
+                            </div>
+                            <div class="thumb" data-index="3">
+                                <img src="images/pdimg3.jpg">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-4 col-md-12">
+                    <div class="portfolio-sliderbar">
+                        <h3 class="port-slid-title">Coolbabka Brand</h3>
+                        <p>We worked on Coolbabka Brand for a long time and we managed to achieve the desired result in
+                            less than a month. Our entire team was 100% involved in the process and we can safely
+                            declare that we are proud of the achieved result.</p>
+                        <ul class="port-slider-tag">
+                            <li class="port-slider-tag-itmes">
+                                <strong>Client:</strong>Katerine Vie
+                            </li>
+                            <li class="port-slider-tag-itmes">
+                                <strong>Start date:</strong>oct 05,2019
+                            </li>
+                            <li class="port-slider-tag-itmes">
+                                <strong>Finish date:</strong>oct 28,2019
+                            </li>
+                            <li class="port-slider-tag-itmes">
+                                <strong>Category:</strong>Branding
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="port-slider-items2">
+                         <h3 class="port-item2">Follow</h3>
+                         <ul class="port-slider-social">
+                            <li class="port-social-item">
+                                <a href="#" class="port-social-link">
+                                    <i class="fa-brands fa-facebook-f"></i>
+                                    <span>facebook</span>
+                                </a>
+                            </li>
+                              <li class="port-social-item">
+                                <a href="#" class="port-social-link">
+                                   <i class="fa-brands fa-linkedin-in"></i>
+                                    <span>Linkedin</span>
+                                </a>
+                            </li>
+                              <li class="port-social-item">
+                                <a href="#" class="port-social-link">
+                                    <i class="fa-brands fa-behance"></i>
+                                    <span>Behance</span>
+                                </a>
+                            </li>
+                              <li class="port-social-item">
+                                <a href="#" class="port-social-link">
+                                  <i class="fa-brands fa-twitter"></i>
+                                    <span>Twitter</span>
+                                </a>
+                            </li>
+                         </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </SECtion>
+
+
+    <!-- start -->
+       <div class="blog-sec21-preview">
+                        <div class="preview">
+                            <i class="fa-solid fa-arrow-left"></i>
+                            <a class="sec21-preview-link" href="#">
+                                <span>Previous post</span>
+
+                                Site Development for IT Company
+
+                            </a>
+                        </div>
+                        <div class="sec21-next">
+                            <a class="sec21-preview-link" href="#">
+                                <span>Previous post</span>
+
+                                SEO Optimization for Bundus
+
+                            </a>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </div>
+                    </div>
+     <!-- end -->
+
+
+
+
+
+
+
+
+
+
+    <!-- start -->
+
+
+    <section class="sd-sec-22">
+        <div class="container">
+            <p class="sd-sec-title text-center">view more cases</p>
+            <h2 class="sd-sec-h2 text-center">Related Works</h2>
+            <p class="sd-sec-p text-center">We have many more similar and successful cases. Take a look and you can
+                truly appreciate the level of our skills.</p>
+
+            <div class="row row-cols-3">
+                <div class="col col-case">
+                    <div class="case-img1 case-1">
+                        <div class="case-text">
+                            <p class="box-text">
+                                <a href="#">Clean design concept</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col col-case">
+                    <div class="case-img1 case-2">
+                        <div class="case-text">
+                            <p class="box-text">
+                                <a href="#">Clean design concept</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col col-case">
+                    <div class="case-img1 case-3">
+                        <div class="case-text">
+                            <p class="box-text">
+                                <a href="#">Clean design concept</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <!-- end -->
+
+
+
+
+
+
+  <!-- start -->
+
+
+
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="container">
+        <div class="row justify-content-between align-items-center footer-nav">
+          <div class="col-xl-2 col-md-2 col-sm-12 col-12">
+
+            <!-- LOGO -->
+            <a class="navbar-brand" href="index.html">
+              <img class="flogo" src="images/flogo.png" alt="flogo">
+              </a>
+
+            </div>
+            <div class="col-xl-10 col-md-10 col-sm-12 col-12">
+            <!-- MENU -->
+            <ul class="nav justify-content-end">
+              <li class="nav-item active"><a class="nav-link active" href="#">Home</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">Services</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">Portfolio</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">Blog</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">Contacts</a></li>
+            </ul>
+            </div>
+          
+          </div>
+
+        <div class="footer-columns">
+
+          <!-- ABOUT -->
+          <div class="footer-col">
+            <h3 class="footer-heading">About</h3>
+            <p>
+              We've got a lot of awards for our work and develop applications that became popular
+              in the world. We try not to miss important details in each area.
+            </p>
+
+            <div class="social-icons">
+              <a href="#"><i class="fa-brands fa-facebook"></i></a>
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-pinterest"></i></a>
+              <a href="#"><i class="fab fa-behance"></i></a>
+            </div>
+          </div>
+
+          <!-- SERVICES -->
+          <div class="footer-col">
+            <h3 class="footer-heading">Services</h3>
+            <ul class="footer-links">
+              <li><a href="#">Brand Identity</a></li>
+              <li><a href="#">Marketing Strategy</a></li>
+              <li><a href="#">App Development</a></li>
+              <li><a href="#">eCommerce</a></li>
+              <li><a href="#">Landing Pages</a></li>
+            </ul>
+          </div>
+
+          <!-- CONTACT -->
+          <div class="footer-col">
+            <h3 class="footer-heading">Contact us</h3>
+
+            <div class="contact">
+              <i class="fas fa-map-marker-alt"></i>
+              <p>694-762 Dekalb Ave<br>Brooklyn, NY 11216 USA</p>
+            </div>
+
+            <div class="contact">
+              <i class="fas fa-phone"></i>
+              <p>+1 6548 96 21</p>
+            </div>
+
+            <div class="contact">
+              <i class="fas fa-envelope"></i>
+              <p>info@sitename.com</p>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- FOOTER BOTTOM -->
+        <div class="footer-bottom">
+          <p>© Copyright 2019 George_Fx</p>
+
+          <div class="bottom-links">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms and Conditions</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+
+
+  <!-- end -->
+
+
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+
+    <script>
+        $('.main-slider-port').slick({
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            arrows: true,
+            fade: true
+        });
+
+        /* Update active thumb when main image changes */
+        $('.main-slider-port').on('afterChange', function (event, slick, current) {
+            $('.thumb').removeClass('active');
+            $('.thumb[data-index="' + current + '"]').addClass('active');
+        });
+
+        /* Click thumb to change main image */
+        $('.thumb').on('click', function () {
+            let index = $(this).data('index');
+            $('.main-slider-port').slick('slickGoTo', index);
+        });
+    </script>
+
+
+
+
+
+
+</body>
+
+</html>
